@@ -9,20 +9,22 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# INFO: reference https://github.com/ublue-os/main/blob/main/packages.json
-# remove packages
-
+# REMOVE
+#
 # no need for them
 dnf5 -y remove firefox
 dnf5 -y remove firefox-langpacks
 dnf5 -y remove htop
 dnf5 -y remove net-tools
 dnf5 -y remove vim
+# KDE specific
+dnf5 -y remove plasma-discover
+dnf5 -y remove plasma-welcome
 
-# TODO:
+# INSTALL
+#
 # KDE specific
 dnf5 -y install flatpak-kcm
-
 # basic tools
 dnf5 -y install ImageMagick
 dnf5 -y install abcde
