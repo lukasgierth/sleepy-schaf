@@ -154,9 +154,9 @@ rm -f /usr/share/applications/nvtop.desktop
 # remove ujust files
 rm -f /usr/share/ublue-os/just/*.just
 # create own file
-cp -f 99-custom.just /usr/share/ublue-os/just/99-custom.just
-cp -f distrobox.ini /etc/distrobox/distrobox.ini
-cp -f toolbox.ini /etc/toolbox/toolbox.ini
+cp -f /ctx/99-custom.just /usr/share/ublue-os/just/99-custom.just
+cp -f /ctx/distrobox.ini /etc/distrobox/distrobox.ini
+cp -f /ctx/toolbox.ini /etc/toolbox/toolbox.ini
 # cleanup justfile imports
 sed -i '/^import/d' /usr/share/ublue-os/justfile
 echo 'import "/usr/share/ublue-os/just/99-custom.just"' >>/usr/share/ublue-os/justfile
