@@ -36,6 +36,15 @@ update-system:
     end
     rpm-ostree update
 
+clean-system:
+    #!/usr/bin/env bash
+    podman image prune -af
+    podman volume prune -f
+    docker image prune -af
+    docker volume prune -f
+    flatpak uninstall --unused --noninteractive --assumeyes
+    rpm-ostree cleanup -bm
+
 toggle-automatic-updates ACTION="prompt":
     #!/usr/bin/env bash
     source /usr/lib/ujust/ujust.sh
@@ -74,12 +83,3 @@ distrobox-assemble CONTAINER="prompt" ACTION="create" FILE="/etc/distrobox/distr
     # Distroboxes are gathered from distrobox.ini, please add them there
     source /usr/lib/ujust/ujust.sh
     AssembleList {{ FILE }} {{ ACTION }} {{ CONTAINER }}
-
-clean-system:
-    #!/usr/bin/env bash
-    podman image prune -af
-    podman volume prune -f
-    docker image prune -af
-    docker volume prune -f
-    flatpak uninstall --unused --noninteractive --assumeyes
-    rpm-ostree cleanup -bm

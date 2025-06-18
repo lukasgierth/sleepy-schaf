@@ -12,4 +12,7 @@ cp -f /ctx/files/toolbox.ini /etc/toolbox/toolbox.ini
 
 # cleanup justfile imports
 sed -i '/^import/d' /usr/share/ublue-os/justfile
+
+echo 'import "/usr/share/ublue-os/just/97-mise.just"' >>/usr/share/ublue-os/justfile
+echo 'import "/usr/share/ublue-os/just/98-flatpak.just"' >>/usr/share/ublue-os/justfile
 echo 'import "/usr/share/ublue-os/just/99-custom.just"' >>/usr/share/ublue-os/justfile
