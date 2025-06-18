@@ -20,6 +20,3 @@ dnf5 -y remove gnome-software
 dnf5 -y remove gnome-tour
 dnf5 -y remove gnome-tweaks
 dnf5 -y remove yelp
-
-# GNOME specific
-dnf5 -y install gnome-shell-extension-caffeine

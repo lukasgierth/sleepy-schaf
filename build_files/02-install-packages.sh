@@ -100,8 +100,8 @@ dnf5 -y install docker-compose-plugin
 # FIX: create systemd service that creates docker group and then disables itself permanently
 
 # virtualization
-dnf5 -y install virt-install
 dnf5 -y install libvirt-daemon-config-network
 dnf5 -y install libvirt-daemon-kvm
 dnf5 -y install qemu-kvm
+dnf5 -y install virt-install
 dnf5 -y install virt-manager
