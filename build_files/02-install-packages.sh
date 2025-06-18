@@ -37,7 +37,6 @@ dnf5 -y install git
 dnf5 -y install gzip
 dnf5 -y install httpx
 dnf5 -y install iperf3
-dnf5 -y install just
 dnf5 -y install luajit
 dnf5 -y install make
 dnf5 -y install mediainfo
