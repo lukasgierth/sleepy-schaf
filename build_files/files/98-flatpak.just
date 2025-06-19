@@ -10,16 +10,16 @@ install-recommended-flatpaks:
             com.rafaelmardojai.Blanket \
             dev.vencord.Vesktop \
             hu.irl.cameractrls \
-            im.riot.Riot \
             io.dbeaver.DBeaverCommunity \
             io.dbeaver.DBeaverCommunity.Client.pgsql \
             io.github.dweymouth.supersonic \
             io.github.flattool.Warehouse \
-            io.github.giantpinkrobots.flatsweep \
-            io.github.vmkspv.netsleuth \
+            io.gitlab.adhami3310.Impression \
             io.mpv.Mpv \
             it.mijorus.gearlever \
-            org.fedoraproject.MediaWriter \
+            org.gnome.Calculator \
+            org.gnome.Characters \
+            org.gnome.Fractal \
             org.gnome.Loupe \
             org.gnome.Papers \
             org.gnome.SimpleScan \
@@ -32,6 +32,5 @@ install-recommended-flatpaks:
             org.musicbrainz.Picard \
             org.raspberrypi.rpi-imager \
             org.remmina.Remmina \
-            org.videolan.VLC \
             org.wezfurlong.wezterm \
             page.tesk.Refine
