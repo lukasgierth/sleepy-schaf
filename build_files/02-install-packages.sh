@@ -35,7 +35,7 @@ dnf5 -y install gcc gcc-c++ glibc-static
 dnf5 -y install gdu
 dnf5 -y install git
 dnf5 -y install gzip
-dnf5 -y install heimdall
+dnf5 -y install heimdall-frontend
 dnf5 -y install httpx
 dnf5 -y install iperf3
 dnf5 -y install luajit
