@@ -42,7 +42,7 @@ dnf5 -y install make
 dnf5 -y install mediainfo
 dnf5 -y install mosh
 dnf5 -y install neovim
-dnf5 -y install newsboatUpdate 02-install-packages.sh
+dnf5 -y install newsboat
 dnf5 -y install pandoc
 dnf5 -y install picocom
 dnf5 -y install podman-compose
