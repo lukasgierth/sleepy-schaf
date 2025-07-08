@@ -42,7 +42,7 @@ dnf5 -y install make
 dnf5 -y install mediainfo
 dnf5 -y install mosh
 dnf5 -y install neovim
-dnf5 -y install newsboat
+dnf5 -y install newsboatUpdate 02-install-packages.sh
 dnf5 -y install pandoc
 dnf5 -y install picocom
 dnf5 -y install podman-compose
@@ -90,11 +90,13 @@ dnf5 -y install blisp
 dnf5 -y install chezmoi
 dnf5 -y install dfu-programmer
 dnf5 -y install eza
+dnf5 -y install hex-rs
 dnf5 -y install hurl
 dnf5 -y install lazygit
 dnf5 -y install rs-tftpd
 dnf5 -y install systemctl-tui
 dnf5 -y install sysz
+dnf5 -y install yazi
 dnf5 -y copr disable gierth/tiny-tools
 
 # ublue copr
